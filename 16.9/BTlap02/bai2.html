@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Tính giai thừa của một số nguyên dương-->
+<p id="kq"></p>
+<script>
+    let n = parseInt(prompt("Nhập vào số nguyên dương"));
+    let tich = 1;
+    for (let i = 1; i <= n; i++) {
+        if (n > 0) {
+            tich *= i;
+            document.getElementById("kq").innerText = "Giai thừa của " + n + " là " + tich
+        } else {
+            alert("Số vừa nhập không thỏa mãn")
+
+        }
+    }
+
+
+</script>
+</body>
+</html>

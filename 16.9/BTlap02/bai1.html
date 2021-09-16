@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 1 Luyện tập 2: In ra 50 số đầu tiên của day Fibonacci-->
+<script>
+    let a=1;
+    let b=1;
+    let c=a+b;
+    let acount =2;
+    document.write(a+'<br>'+b)
+    while (acount<50) {
+
+        let c=a+b;
+        a=b;
+        b=c;
+        document.write('<br>'+c);
+        acount++
+
+    }
+</script>
+</body>
+</html>

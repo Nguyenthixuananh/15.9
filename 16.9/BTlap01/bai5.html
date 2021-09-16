@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Tính tổng của 20 số đầu tiên trong dãy fibonacci.-->
+<script>
+    function displayFibonacci() {
+        let N = +prompt("Nhập vào số lượng số trong dãy Fibonacci")
+        let a = 1;
+        let b = 1;
+        let c = a + b;
+        let count = 2;
+        let sum = 0;
+        document.write(a + ';' + b);
+
+        while (count < N) {
+            c = a + b;
+            a = b;
+            b = c;
+            sum+=c;
+            document.write(';' + c);
+
+            count++;
+        }  document.write("<br> Tổng của " + N + " số đầu tiên trong dãy là " + sum);}
+    displayFibonacci()
+
+
+</script>
+</body>
+</html>

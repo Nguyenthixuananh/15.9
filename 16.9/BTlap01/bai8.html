@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--game "Hãy thử đoán xem!"-->
+<input type="button" value="Chơi" onclick="play()" id="bamlai2">
+<input type="button" id="bamlai1" value="Chơi lại" onclick="playAgain()">
+<h1 id="result"></h1>
+<script>
+    let result = document.getElementById("result");
+    let bamlai2 = document.getElementById("bamlai2");
+    let bamlai1 = document.getElementById("bamlai1");
+
+    function play() {
+        let count = 0;
+        let min = parseInt(prompt("Nhập vào số nhỏ", ""));
+        let max = parseInt(prompt("Nhập vào số lớn", ""));
+        let random = Math.floor(Math.random() * (max - min + 1))
+        while (count < 3) {
+            let num = parseInt(prompt("Hãy nhập số mà bạn đoán"))
+            if (num == random) {
+                alert("Bạn đã đoán đúng");
+                bamlai2.style.display = 'none'
+                bamlai1.style.display = 'block'
+                break;
+            } else {
+                alert("Bạn đã đoán sai")
+            }
+            count = count + 1
+        }
+    }
+
+    function playAgain() {
+        result.innerHTML = "<br/>";
+        bamlai2.style.display = 'block';
+        bamlai1.style.display = 'none';
+    }
+</script>
+</body>
+</html>

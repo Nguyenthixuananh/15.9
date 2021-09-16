@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--In tam giác vuông. Các góc vuông nằm ở các vị trí khác nhau-->
+<h2 id="result1"></h2>
+<h2 id="result2"></h2>
+
+<script>
+    function display1() {
+
+        let i = 1;
+        let tamgiac = "";
+        while (i <= 5) {
+            for (let j = 1; j <= i; j++) {
+                tamgiac += "*"
+            }
+            tamgiac += "<br/>"
+            i++;
+        }
+        document.getElementById("result1").innerHTML = tamgiac;
+    }
+
+    function display2() {
+
+        let i = 5;
+        let tamgiac = "";
+        while (i > 0) {
+            for (let j = 1; j <= i; j++) {
+                tamgiac += "*"
+            }
+            tamgiac += "<br/>"
+            i--;
+        }
+        document.getElementById("result2").innerHTML = tamgiac;
+    }
+    function display3() {
+
+    }
+    display1();
+    display2();
+</script>
+</body>
+</html>
