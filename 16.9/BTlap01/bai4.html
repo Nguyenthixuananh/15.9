@@ -5,23 +5,25 @@
     <title>Title</title>
 </head>
 <body>
-<!--Tìm số đầu tiên trong dãy fibonacci chia hết cho 5.-->
-<h1 id="result" style="text-align: center"> </h1>
+
+<p id="result">Số đầu tiên trong dãy chia hết cho 5 là</p>
 <script>
-    function Fibonancci(n) {
-        if (n < 2) {
-            return 1;
-        } else {
-            return Fibonancci(n-2) + Fibonancci(n-1);
-        }
+    let a=1;
+    let b=1;
+    let check = true;
+    while (check) {
+
+        let c=a+b;
+        a=b;
+        b=c;
+    if (c % 5 === 0) {
+        document.write(c)
+        check=false
     }
-    function check() {
-        let n = 2;
-        while (Fibonancci(n) % 5 !== 0) {
-            n+=1;
-        }
-        document.getElementById("result").innerHTML = `${Fibonancci(n)}`;
+
     }
-    check();
-</script></body>
+</script>
+
+
+</body>
 </html>

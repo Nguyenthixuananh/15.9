@@ -7,31 +7,34 @@
 <body>
 <!--hiển thị 20 số nguyên tố đầu tiên.-->
 <script>
-    function checkPrime(){
-        let num=20;
-        let count =0;
-        let N=2;
-        while (count<num){
-            let flag = true;
-            if (N<2){
-                flag=false;
+
+    function kiemtraSNT() {
+        let num = 20;
+        let N = 2;
+        let count = 0;
+        while (count < num) {
+            let check = true;
+            if (N < 2) {
+                check = false;
             }
-            let i=2;
-            while (i<N){
-                if (N%i===0){
-                    flag=false;
+            let i = 2;
+            while (i < N) {
+                if (N % i === 0) {
+                    check = false;
                 }
-                i++;
+                i++
             }
-            if (flag===true){
-                document.write(N+',')
+            if (check = true) {
+                document.write(N + "<br>");
                 count++;
             }
-            N++;
-        }
 
-    }
-    checkPrime()
+        N++
+    }}
+
+
+
+    kiemtraSNT();
 </script>
 </body>
 </html>

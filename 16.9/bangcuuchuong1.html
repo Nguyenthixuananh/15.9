@@ -5,22 +5,35 @@
     <title>Title</title>
 </head>
 <body>
-<table id="tab" border="1" width="100%" >
+<!--<table id="tab" border="1" width="100%" >-->
 
-</table>
-<script>
-    let n = '';
-    for (let i = 1; i <= 9; i++) {
-        n = n + '<tr>';
-        for (let j = 2; j <= 9; j++) {
-            n = n + '<td>' + j + 'x' + i + '=' + j*i + '</td>';
+<!--</table>-->
+<!--<script>-->
+<!--    let n = '';-->
+<!--    for (let i = 1; i <= 9; i++) {-->
+<!--        n = n + '<tr>';-->
+<!--        for (let j = 2; j <= 9; j++) {-->
+<!--            n = n + '<td>' + j + 'x' + i + '=' + j*i + '</td>';-->
+<!--        }-->
+<!--        n = n + '</tr>';-->
+<!--    }-->
+<!--    document.getElementById("tab").innerHTML = n-->
+
+
+<!--</script>-->
+<table border="1" width="100%">
+    <script>
+        let n = "";
+        for (let i = 1; i <= 9; i++) {
+            n += "<tr>";
+            for (let j = 2; j <= 9; j++) {
+                n += "<td>" + j + "x" + i + "=" +
+                i * j + "</td>"
+            }
+            n += "</tr>"
         }
-        n = n + '</tr>';
-    }
-    document.getElementById("tab").innerHTML = n
-
-
-</script>
-
+        document.write(n)
+    </script>
+</table>
 </body>
 </html>

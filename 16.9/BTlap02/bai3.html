@@ -6,42 +6,42 @@
 </head>
 <body>
 <!--In tam giác vuông. Các góc vuông nằm ở các vị trí khác nhau-->
-<h2 id="result1"></h2>
-<h2 id="result2"></h2>
+
 
 <script>
-    function display1() {
-
-        let i = 1;
-        let tamgiac = "";
-        while (i <= 5) {
-            for (let j = 1; j <= i; j++) {
-                tamgiac += "*"
-            }
-            tamgiac += "<br/>"
-            i++;
+    for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= i; j++) {
+            document.write("*")
         }
-        document.getElementById("result1").innerHTML = tamgiac;
+        document.write("<br>")
     }
-
-    function display2() {
-
-        let i = 5;
-        let tamgiac = "";
-        while (i > 0) {
-            for (let j = 1; j <= i; j++) {
-                tamgiac += "*"
-            }
-            tamgiac += "<br/>"
-            i--;
+    document.write("<br>")
+    for (let i = 5; i > 0; i--) {
+        for (let j = 1; j <= i; j++) {
+            document.write("*")
         }
-        document.getElementById("result2").innerHTML = tamgiac;
+        document.write("<br>")
     }
-    function display3() {
 
+    for (let i = 0; i <= 5; i++) {
+        for (let j = 4; j >= i; j--) {
+            document.write("&ensp;")
+        }
+        for (let j = 1; j <= i; j++) {
+            document.write("*")
+        }
+        document.write("<br>")
     }
-    display1();
-    display2();
+    document.write("<br>")
+    for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= i; j++) {
+            document.write("&ensp;")
+        }
+        for (let j = 5; j >= i; j--) {
+            document.write("*")
+        }
+        document.write("<br>")
+    }
 </script>
 </body>
 </html>

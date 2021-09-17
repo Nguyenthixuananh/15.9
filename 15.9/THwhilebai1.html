@@ -8,14 +8,22 @@
 <!--Viết chương trình nhận vào một số từ hộp thoại, việc nhập kết thúc khi người dùng nhập vào giá trị -1.-->
 <!--Mỗi giá trị nhập được sẽ được hiển thị ra và thực hiện tính tổng các giá trị đó.-->
 <script>
-    let number = +prompt("Nhập vào số");
-    let total = 0;
-    while (number != -1) {
-        number = +prompt("Nhập vào sô");
-        alert(number);
-        total += number;
+    // let number = +prompt("Nhập vào số");
+    // let total = 0;
+    // while (number != -1) {
+    //     number = +prompt("Nhập vào sô");
+    //     alert(number);
+    //     total += number;
+    // }
+    // alert("Tổng các số vừa nhập là " + total)
+    num = parseInt(prompt("Nhập vào số"));
+    let sum = 0;
+    while (num != -1) {
+        num = parseInt(prompt("Nhập vào số"));
+        // alert(num);
+        sum += num;
     }
-    alert("Tổng các số vừa nhập là " + total)
+    document.write("Tổng các số vừa nhập là " + sum)
 </script>
 </body>
 </html>

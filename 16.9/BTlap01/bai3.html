@@ -6,28 +6,24 @@
 </head>
 <body>
 <!--1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610…-->
-<p>Hiển thị ra 20 số trong dãy fibonacci đầu tiên.</p>
+<p>20 số trong dãy fibonacci đầu tiên.</p>
 <script>
-    function displayFibonacci() {
-        let N = +prompt("Nhập vào số lượng số trong dãy Fibonacci")
-        let a = 1;
-        let b = 1;
-        let c = a + b;
-        let count = 2;
-        document.write(a + ';' + b);
 
-        while (count < N) {
-            c = a + b;
-            a = b;
-            b = c;
-            document.write(';' + c);
+    function fibonacci() {
+        let a =1;
+        let b =1;
+        let c=a+b;
+        let count=2;
+        document.write(a+";"+b)
+        while (count<20) {
+            c=a+b;
+            a=b;
+            b=c;
+            document.write(";"+c);
             count++
         }
-
-
     }
-
-    displayFibonacci();
+    fibonacci()
 </script>
 
 </body>
